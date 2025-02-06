@@ -1,0 +1,18 @@
+
+@mixin flex($name){
+    display: flex;
+justify-content: $name;
+    align-items: center;
+}
+@mixin TopLW($t, $l, $w, $z) {
+        top: #{$t};
+    left: #{$l};
+    position: absolute;
+    width: #{$w};
+    z-index: $z;
+}
+@mixin color_font($color, $font)
+{
+    color: $color;
+    font-size: $font;
+}

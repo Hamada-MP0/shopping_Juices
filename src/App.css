@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.hero {
+  position: relative;
+  background-color: rgba(126, 45, 219, 0.822);
+  height: 100vh;
+}
+
+.hero::after {
+  content: "";
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 80%;
+  z-index: 1;
+  height: 100%;
+  background: radial-gradient(circle, #bd9fff, transparent, transparent);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 90px;
+}
+
+header nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header nav .logo {
+  color: white;
+  font-size: 55px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: "Anton", serif;
+}
+
+nav .nav_links {
+  display: flex;
+  gap: 50px;
+}
+
+nav .nav_links a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  transition: 0.4s ease;
+}
+
+nav .nav_links a:hover {
+  color: #53008a;
+}
+
+.hero .container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  height: 100%;
+}
+
+.hero .container #can {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  width: 35%;
+  z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#leaf {
+  top: 60%;
+  left: 10%;
+  position: absolute;
+  width: 12%;
+  z-index: 10;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#coconoutleaf {
+  position: absolute;
+  top: 10%;
+  width: 20%;
+  right: 0;
+}
+
+#blackberry1 {
+  top: 40%;
+  left: 60%;
+  position: absolute;
+  width: 12%;
+  z-index: 0%;
+  transform: translate(-50%, -50%);
+}
+
+#blackberry2 {
+  top: 60%;
+  left: 39%;
+  position: absolute;
+  width: 15%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+#blackberry3 {
+  top: 35%;
+  left: 35%;
+  position: absolute;
+  width: 8vw;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.container h1 {
+  color: white;
+  font-size: 28vw;
+  letter-spacing: 10px;
+  font-weight: 900;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+
+.about .text {
+  padding: 100px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.about .text h2 {
+  color: black;
+  font-size: 3.5vw;
+  text-transform: capitalize;
+  position: relative;
+  z-index: 20;
+}
+.about .text h2 span {
+  color: #bd9fff;
+}
+.about .text .btn {
+  padding: 15px 45px;
+  background: #8c73c2;
+  color: #fff;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #a37df3;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 35px;
+  transition: 0.3s ease;
+}
+.about .text .btn:hover {
+  background: #e2dfe7;
+  color: #ab29cc;
+  border: 1px solid #8c73c2;
+  transition: 0.5s;
+}
+.about .text .content {
+  width: 50%;
+}
+
+.about .boxs {
+  display: flex;
+  gap: 50%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.about .boxs .box img {
+  width: 25%;
+  rotate: 60deg;
+}
+.about .boxs h4 {
+  margin: 20px 0 10px;
+  color: #0d071c;
+  font-size: 1.3vw;
+}
+.about .boxs p {
+  color: #252130;
+  font-size: 0.9vw;
+}
+
+.img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.img .canVi {
+  top: -500%;
+  left: 30%;
+  position: absolute;
+  width: 65%;
+  z-index: 100;
+}
+.img .blackberry1 {
+  rotate: 80deg;
+  top: -500%;
+  left: 5%;
+  position: absolute;
+  width: 25%;
+  z-index: 0;
+}
+.img .blackberry2 {
+  right: -20%;
+  top: -50%;
+  left: null;
+  position: absolute;
+  width: 25%;
+  z-index: 0;
+}
+.img .blackberry3 {
+  width: 5%;
+}
+
+.stand {
+  height: 85vh;
+  background-color: rgba(168, 123, 219, 0.822);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 130px;
+}
+.stand .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.stand img {
+  width: 55%;
+}
+.stand h3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  color: rgb(151, 48, 235);
+  font-size: 26vh;
+  text-transform: uppercasvhe;
+  font-family: "Anton", serif;
+  letter-spacing: 15px;
+}
+.stand .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  height: 400px;
+}
+.stand .stan {
+  position: absolute;
+  top: 70%;
+  margin: -100px 0 0 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=App.css.map */

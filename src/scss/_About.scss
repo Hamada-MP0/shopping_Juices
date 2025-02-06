@@ -1,0 +1,78 @@
+@use './_Mixin.scss' as *;
+
+.about .text{
+    padding: 100px 0;
+    height: 100vh; 
+    @include flex(space-between);
+    width: 100%;
+   h2{            
+            @include color_font(black,3.5vw);
+            text-transform: capitalize;
+            position: relative;
+            z-index: 20;
+             span{
+                color: #bd9fff;
+            }
+        }   
+        .btn{
+        padding: 15px 45px;
+        background: #8c73c2;
+        color: #fff;
+        @include color_font(#fff,18px);
+        border: 1px solid #a37df3;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 35px;
+        transition: 0.3s ease;
+        &:hover{
+            background: #e2dfe7;
+            color: #ab29cc;
+            border: 1px solid #8c73c2;
+            transition: 0.5s;
+        }
+        }
+        .content{
+            width: 50%;
+        }
+}
+
+.about .boxs{
+    display: flex;
+    gap: 50%;
+    margin-top: 30px ;
+    margin-bottom: 60px;
+    .box img{
+        width: 25%;
+     rotate: 60deg;
+    }
+    h4{
+        margin: 20px 0 10px;
+        @include color_font(#0d071c,1.3vw);
+
+    }
+    p{
+        @include color_font(#252130,0.9vw);
+    }
+}
+
+.img{
+    width: 50%;
+    @include flex(null);
+
+    position: relative;
+    .canVi{
+@include TopLW( -500%, 30%,65% ,100 );
+    }
+    .blackberry1{
+        rotate: 80deg;
+        @include TopLW( -500%, 5%,25% ,0 );
+    }
+    .blackberry2{
+        right:  -20%;
+        @include TopLW( -50%, "null",25% ,0 );
+    }
+    .blackberry3{
+        width: 5%;
+    }
+ 
+}

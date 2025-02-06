@@ -1,0 +1,41 @@
+
+
+@use './_Mixin.scss' as *;
+.stand{
+    height: 85vh;
+    background-color: rgba(168, 123, 219, 0.822);
+    @include flex(center);
+    padding: 130px;
+    .container{
+        @include flex(center);
+        position: relative;
+    }
+}
+
+.stand {
+    img{
+        width: 55%;
+    }
+    h3{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+    @include color_font(rgb(151, 48, 235),26vh);
+        text-transform: uppercasvhe;
+        font-family: 'Anton', serif;
+        letter-spacing: 15px;
+    }
+    .img{
+        @include flex(center);
+        flex-direction: column;
+        width: 70%;
+        height: 400px;
+    }
+    .stan{
+        position: absolute;
+        top: 70%;
+        margin:-100px 0 0 0 ;
+        }
+        
+}
